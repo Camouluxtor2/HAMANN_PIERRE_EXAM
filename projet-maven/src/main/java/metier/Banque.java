@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
-import Exception.ExceptionClientInexistant;
-import Exception.ExceptionCompteInexistant;
+import exception.ExceptionClientInexistant;
+import exception.ExceptionCompteInexistant;
 
 public class Banque {
 	

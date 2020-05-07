@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import Exception.ExceptionClientInexistant;
-import Exception.ExceptionCompteInexistant;
+import exception.ExceptionClientInexistant;
+import exception.ExceptionCompteInexistant;
 import metier.Banque;
 import metier.Client;
 import metier.CompteAvecDecouvert;
