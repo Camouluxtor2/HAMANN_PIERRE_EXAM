@@ -1,0 +1,28 @@
+create table client(
+	num_client varchar(50),
+	adresse varchar(100),
+	nom varchar(50),
+	primary key(num_client)
+);
+
+create table compte(
+	num_compte varchar(50),
+	solde double,
+	decouvert double,
+	num_client varchar(50),
+	FOREIGN KEY (num_client) REFERENCES Client(num_client),
+	primary key(num_compte)
+);
+
+
+insert into client(num_client, adresse, nom) values("001","2 rue de la foret","Paul Chevre");
+insert into client(num_client, adresse, nom) values("002","17 rue du cercueil","Leonard Mouton");
+insert into client(num_client, adresse, nom) values("003","72 rue des jonquilles","Brigitte Thon");
+
+insert into compte(num_compte, solde, decouvert, num_client) values ("C001", 1024.55, 120, "001");
+insert into compte(num_compte, solde, decouvert, num_client) values ("C002", 24000, 2000, "002");
+insert into compte(num_compte, solde, decouvert, num_client) values ("C003", 47000, 1000, "002");
+insert into compte(num_compte, solde, decouvert, num_client) values ("C004", 120.47, 50, "003");
+insert into compte(num_compte, solde, decouvert, num_client) values ("C005", 647.58, 100, "003");
+
+
